@@ -7,7 +7,7 @@ def callback(packet):
     print(packet.show())
     print("=====================================================")
 
-data = sniff(filter="icmp", prn=callback)
+data = sniff(filter="tcp and port 80", prn=callback)
 
 # for packet in data:
 #     print("=====================================================")
