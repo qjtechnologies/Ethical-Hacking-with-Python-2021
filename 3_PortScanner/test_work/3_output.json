@@ -1,0 +1,47 @@
+{
+  "192.168.31.123": {
+    "osmatch": [
+      {
+        "name": "Linux 2.6.32",
+        "accuracy": "100",
+        "line": "55736",
+        "osclass": {
+          "type": "general purpose",
+          "vendor": "Linux",
+          "osfamily": "Linux",
+          "osgen": "2.6.X",
+          "accuracy": "100"
+        },
+        "cpe": "cpe:/o:linux:linux_kernel:2.6.32"
+      }
+    ],
+    "ports": [
+      {
+        "protocol": "tcp",
+        "portid": "80",
+        "state": "open",
+        "reason": "syn-ack",
+        "reason_ttl": "64",
+        "service": { "name": "http", "method": "table", "conf": "3" },
+        "scripts": []
+      }
+    ],
+    "hostname": [],
+    "macaddress": null
+  },
+  "runtime": {
+    "time": "1631333088",
+    "timestr": "Sat Sep 11 04:04:48 2021",
+    "summary": "Nmap done at Sat Sep 11 04:04:48 2021; 1 IP address (1 host up) scanned in 1.56 seconds",
+    "elapsed": "1.56",
+    "exit": "success"
+  },
+  "stats": {
+    "scanner": "nmap",
+    "args": "/usr/bin/nmap -oX - -O 192.168.31.123",
+    "start": "1631333087",
+    "startstr": "Sat Sep 11 04:04:47 2021",
+    "version": "7.91",
+    "xmloutputversion": "1.05"
+  }
+}
