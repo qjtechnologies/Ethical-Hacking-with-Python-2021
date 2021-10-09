@@ -1,0 +1,7 @@
+Steps to do for the assignment:
+
+1. Create an ICMP Packet
+2. Spoof the ICMP packet source to some other machines IP
+3. Run wireshark on that Machine
+4. CHeck if you are getting the reply ICMP packets
+5. Submit code with screenshots
